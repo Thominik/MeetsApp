@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Data.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20220221102357_ExtendedUserEntity")]
+    [Migration("20220221111459_ExtendedUserEntity")]
     partial class ExtendedUserEntity
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,9 +54,6 @@ namespace API.Data.Migrations
 
                     b.Property<string>("LookingFor")
                         .HasColumnType("TEXT");
-
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("INTEGER");
 
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("BLOB");

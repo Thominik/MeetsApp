@@ -72,13 +72,6 @@ namespace API.Data.Migrations
                 type: "TEXT",
                 nullable: true);
 
-            migrationBuilder.AddColumn<int>(
-                name: "MyProperty",
-                table: "Users",
-                type: "INTEGER",
-                nullable: false,
-                defaultValue: 0);
-
             migrationBuilder.CreateTable(
                 name: "Photos",
                 columns: table => new
@@ -150,10 +143,6 @@ namespace API.Data.Migrations
 
             migrationBuilder.DropColumn(
                 name: "LookingFor",
-                table: "Users");
-
-            migrationBuilder.DropColumn(
-                name: "MyProperty",
                 table: "Users");
         }
     }

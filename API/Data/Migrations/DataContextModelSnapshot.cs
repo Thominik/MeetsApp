@@ -53,9 +53,6 @@ namespace API.Data.Migrations
                     b.Property<string>("LookingFor")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("INTEGER");
-
                     b.Property<byte[]>("PasswordHash")
                         .HasColumnType("BLOB");
 
